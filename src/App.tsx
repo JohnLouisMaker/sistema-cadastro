@@ -6,11 +6,11 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { ThemeProvider } from "@mui/material";
-import { lightTheme } from "./shared/themes/light";
+import { darkTheme } from "./shared/themes/dark";
 
 export default function App() {
   return (
-    <ThemeProvider theme={lightTheme}>
+    <ThemeProvider theme={darkTheme}>
       <BrowserRouter>
         <AppRoutes />
       </BrowserRouter>
