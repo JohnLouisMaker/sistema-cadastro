@@ -5,15 +5,16 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import { ThemeProvider } from "@mui/material";
-import { darkTheme } from "./shared/themes/dark";
+
+import { AppThemeProvider } from "./shared/context/themeProvider";
+
 
 export default function App() {
   return (
-    <ThemeProvider theme={darkTheme}>
+    <AppThemeProvider >
       <BrowserRouter>
         <AppRoutes />
       </BrowserRouter>
-    </ThemeProvider>
+    </AppThemeProvider>
   );
 }
